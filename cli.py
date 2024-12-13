@@ -1,6 +1,5 @@
 import functions
 
-
 while True:
     user_action = input("Type add, show, edit, complete or exit: ")
     todos = functions.get_todos()
@@ -34,7 +33,7 @@ while True:
            todos.pop(number - 1)
            print(f"Todo: {todo_to_remove} was removed from the list!")
            functions.write_todos(todos)
-       except IndexError:
+       except Exception as e:
            print("This command is invalid! Type the index of the todo!")
            continue
 
