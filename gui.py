@@ -1,14 +1,25 @@
 import functions
-import FreeSimpleGUI as gui
+import FreeSimpleGUI as sg
 
-label = gui.Text("Type in a to-do")
-input_box = gui.InputText(tooltip="Enter todo")
-add_button = gui.Button("Add")
-fb = gui.FileBrowse("choose")
-fob = gui.FolderBrowse("choose")
+label = sg.Text("Type in a to-do")
+input_box = sg.InputText(tooltip="Enter todo", key="todo")
+add_button = sg.Button("Add")
 
-window = gui.Window("My To-Do App", layout=[[label, input_box],[add_button, fb, fob]])
-window.read()
+window = sg.Window("My To-Do App", layout=[[label, input_box],[add_button]])
+
+while True:
+    event, values = window.read()
+    print(event, values)
+    match event:
+        case "Add":
+            todos = functions.get_todos()
+            new_td = values["todo"] + "\n"
+            todos.append(new_td)
+            functions.write_todos(todos)
+        case sg.WIN_CLOSED:
+            break
+
+
 window.close()
 
 
