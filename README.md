@@ -49,6 +49,18 @@ Welcome to the **To-Do List App**, a simple yet powerful application built with 
 4. Click **Exit** to close the app.
 
 ---
+## 📸 Screenshots
+![Display1](images/display1.png)
+![Display2](images/display2.png)
+
+---
+
+## Demo Video
+Click below to watch the demo video!
+
+[![Watch the video](https://img.youtube.com/vi/Lexyo-TkoM0/0.jpg)](https://www.youtube.com/watch?v=Lexyo-TkoM0)
+
+
 
 ---
 
@@ -64,4 +76,4 @@ Special thanks to the Python and PySimpleGUI communities for their amazing suppo
 ---
 
 ## 📧 Contact
-Feel free to reach out via GitHub Issues if you have any questions or feedback! 😄
+Feel free to explore the project and share your feedback. For any queries or suggestions, reach out to me at [sathiyanarayanan.s1698@gmail.com](mailto:sathiyanarayanan.s1698@gmail.com).
